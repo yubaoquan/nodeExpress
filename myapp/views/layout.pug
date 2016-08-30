@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/nav.css')
+        link(rel='stylesheet', href='/stylesheets/reset.css')
+        link(rel='stylesheet', href='/stylesheets/lib/AdminLTE.min.css')
+        link(rel='stylesheet', href='/stylesheets/lib/bootstrap.css')
+        link(rel='stylesheet', href='/stylesheets/lib/skins/_all-skins.css')
+        meta(charset='utf-8')
+    body.skin-blue.fixed
+        <mynav></mynav>
+        block content
+        script(src="/dist/nav.bundle.js")

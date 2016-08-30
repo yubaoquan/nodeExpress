@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= title
+    div#page {{message}}
+        p Welcome to #{title}
+        .red this is a red div
+        button#btn1.btn.btn-primary.btn-flat(v-on:click="sendRequest()") 发送请求
+        script(type='text/javascript' src='/dist/main.bundle.js')

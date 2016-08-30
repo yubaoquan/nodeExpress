@@ -1,0 +1,50 @@
+mixin navigator
+    header.main-header
+        nav.navbar.navbar-static-top
+            .container-fluid
+                .navbar-header
+                    a.navbar-brand(href="/") <b>NEMV</b>首页
+                    button.navbar-toggle.collapsed(data-toggle="collapse" data-target="#navbar-collapse")
+                        i.fa fa-bars
+
+                #navbar-collapse.collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li.active
+                            a(href="#") Link 
+                                span.sr-only
+                        li
+                            a(href="/widgets") 组件列表
+                        li.dropdown
+                            a.dropdown-toggle(href="#" data-toggle="dropdown") Dropdown <span class="caret"></span>
+                        ul.dropdown-menu(role="menu")
+                            li
+                                a(href="#") Action
+                            li
+                                a(href="#") Another action
+                            li
+                                a(href="#") Something else here
+                            li.divider
+                            li
+                                a(href="#") Separated link
+                            li.divider
+                            li
+                                a(href="#") One more separated link
+                    form.navbar-form.navbar-left(role="search")
+                        .form-group
+                            input#navbar-search-input.form-control(type="text" placeholder="Search")
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href="#") Link
+                        li.dropdown
+                            a.dropdown-toggle(href="#" data-toggle="dropdown") Dropdown <span class="caret"></span>
+                            ul.dropdown-menu(role="menu")
+                                li
+                                    a(href="#") Action
+                                li
+                                    a(href="#") Another action
+                                li
+                                    a(href="#") Something else here
+                                li.divider
+                                li
+                                    a(href="#") Separated link
+    .h50
